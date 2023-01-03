@@ -14,7 +14,7 @@ class Aspirasi extends Model
         'nim',
         'kategori',
         'aspirasi',
-        'gambar',
+        'images',
         'status',
     ];
 }

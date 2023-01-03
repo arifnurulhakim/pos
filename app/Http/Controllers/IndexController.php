@@ -45,8 +45,6 @@ class IndexController extends Controller
             'status' => 'required',
             'gambar',
         ];
-    
-       
         $validator = Validator::make($request->all(),$rules);
         if ($validator->fails()){
             return redirect()->back()

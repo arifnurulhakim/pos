@@ -152,7 +152,7 @@ Dewan Perwakilan Mahasiswa (DPM) Fakultas Ekonomi dan Bisnis Universitas Telkom 
 
               <div class="form-group">
                 <label for="gambar">gambar</label>
-                  <input type="file" name="gambar" class="form-control border-input">
+                  <input type="file" name="images" class="form-control border-input">
               </div>
               <div class="text-center">
                 <button type="submit"  class="btn btn-primary" style="color=#37517e" >SAMPAIKAN ASPIRASIMU!!!</button>

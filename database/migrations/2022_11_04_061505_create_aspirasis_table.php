@@ -18,7 +18,7 @@ class CreateAspirasisTable extends Migration
             $table->string('nim', 20);
             $table->enum('kategori', ['Akademik','minat bakat', 'fasilitas', 'ormawa', 'dll'])->default('dll');
             $table->string('aspirasi');
-            $table->string('gambar');
+            $table->string('images');
             $table->enum('status',['pending','accept','done'])->default('pending');
             $table->timestamps();
         });

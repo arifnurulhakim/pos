@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Intervention\Image\ImageManagerStatic as ImageManager;
 
+
 class AspirasiController extends Controller
 {
      /**
@@ -33,13 +34,38 @@ class AspirasiController extends Controller
     {
         return view('aspirasi.create');
     }
-
+    // public function store(Request $request)
+    // {
+    //     $request->validate([
+    //         'nim' => 'required',
+    //         'aspirasi' => 'required',
+    //         'kategori' => 'required',
+    //         'status' => 'in:pending,accept,done',
+    //         'images' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+    //     ]);
+  
+    //     $input = $request->all();
+    //     dd($input);
+    //     if ($image = $request->file('images')) {
+    //         $destinationPath = 'images/';
+    //         $Images = date('YmdHis') . "." . $image->getClientOriginalExtension();
+    //         $image->move($destinationPath, $Image);
+    //         $input['images'] = "$Image";
+    //     }
+    
+    //     Aspirasi::create($input);
+     
+    //     return redirect()->route('index')->with('success_message', 'Berhasil menambah aspirasi baru');
+    // }
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+
+
     public function store(Request $request)
     {
         $rules=[
@@ -47,7 +73,7 @@ class AspirasiController extends Controller
             'aspirasi' => 'required',
             'kategori' => 'required',
             'status' => 'in:pending,accept,done',
-            'gambar' => 'max:2048',
+            'images' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ];
         $validator = Validator::make($request->all(),$rules);
         if ($validator->fails()){
@@ -60,16 +86,18 @@ class AspirasiController extends Controller
             $aspirasi -> aspirasi = $request->input('aspirasi');
             $aspirasi -> kategori = $request->input('kategori');
             $aspirasi -> status = $request->input('status');
-            $aspirasi -> gambar = $request->file('gambar');
+            
 
-
-            if ($aspirasi->gambar != null) {
-                $extension = $aspirasi->gambar->extension();
+            if ($request->hasFile('images')) {
+                $path = $request->file('images')->store('images');
+                dd($path);
+                $gambar_aspirasi = ImageManager::make('storage/images/'.$path);
+                $gambar_aspirasi->fit(1200, 500);
+                $gambar_aspirasi->save(storage_path().'/app/public/images/'.$path);
+                $aspirasi->gambar = $path;
             }
-            $imageName = time().'.'.$aspirasi->gambar->extension();
 
-            $aspirasi->gambar->move(public_path('gambar'), $imageName);
-
+            
             $aspirasi->save();
             return redirect()->route('index')
             ->with('success_message', 'Berhasil menambah aspirasi baru');
@@ -142,7 +170,7 @@ class AspirasiController extends Controller
                 $gambar_aspirasi = ImageManager::make('storage/gambar/'.$path);
                 $gambar_aspirasi->fit(1200, 500);
                 $gambar_aspirasi->save(storage_path().'/app/public/gambar/'.$path);
-                $user->gambar = $path;
+                $aspirasi->gambar = $path;
             }
 
             $aspirasi->save();
