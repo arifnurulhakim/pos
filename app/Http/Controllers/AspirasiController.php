@@ -73,7 +73,7 @@ class AspirasiController extends Controller
             'aspirasi' => 'required',
             'kategori' => 'required',
             'status' => 'in:pending,accept,done',
-            'images' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'images' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ];
         $validator = Validator::make($request->all(),$rules);
         if ($validator->fails()){
@@ -88,18 +88,18 @@ class AspirasiController extends Controller
             $aspirasi -> status = $request->input('status');
             
 
-            if ($request->hasFile('images')) {
-                $path = $request->file('images')->store('images');
-                dd($path);
-                $gambar_aspirasi = ImageManager::make('storage/images/'.$path);
-                $gambar_aspirasi->fit(1200, 500);
-                $gambar_aspirasi->save(storage_path().'/app/public/images/'.$path);
-                $aspirasi->gambar = $path;
-            }
+            // if ($request->hasFile('images')) {
+            //     $path = $request->file('images')->store('images');
+            //     dd($path);
+            //     $gambar_aspirasi = ImageManager::make('storage/images/'.$path);
+            //     $gambar_aspirasi->fit(1200, 500);
+            //     $gambar_aspirasi->save(storage_path().'/app/public/images/'.$path);
+            //     $aspirasi->gambar = $path;
+            // }
 
             
             $aspirasi->save();
-            return redirect()->route('index')
+            return redirect()->route('aspirasi.index')
             ->with('success_message', 'Berhasil menambah aspirasi baru');
         }
     }

@@ -2,254 +2,382 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>SIAP</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <title>Lava Landing Page HTML Template</title>
+<!--
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+Lava Landing Page
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+https://templatemo.com/tm-540-lava-landing-page
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+-->
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-lava.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
-
-      <h1 class="logo me-auto"><a href="{{route('index')}}"><img src="assets/img/dpmtelu.png" class="img-fluid" alt=""></a></h1>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
-          <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
-          <li><a class="nav-link scrollto" href="#form-aspirasi">Form Aspirasi</a></li>
-          <li><a class="nav-link scrollto" href="#list-aspirasi">List Aspirasi</a></li>
-          <li><a class="getstarted scrollto" href="{{route('login')}}">Login</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Sistem Aspirasi Cepat Tanggap</h1>
-          <h2>Sampaikan Aspirasimu Sekarang!</h2>
-
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#form-aspirasi" class="btn-get-started scrollto">Buat Aspirasi</a>
-            <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
-          </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-        </div>
-      </div>
-    </div>
-
-  </section><!-- End Hero -->
-
-  <main id="main">
+    <!-- ***** Preloader End ***** -->
 
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Tentang Kami</h2>
-        </div>
-
-        <div class="row content">
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-            Deskripsi singkat website SIAP:<br>
-Website SIAP ( Sistem Aspirasi Cepat Tanggap) merupakan wadah bagi mahasiswa Fakultas Ekonomi dan Bisnis untuk menyalurkan aspirasinya melalui website. Website SIAP lebih fleksibel karena mahasiswa dapat menyalurkan aspirasinya kapanpun dan dimanapun. Adanya website SIAP dapat mempermudah dalam menampung dan mengeksekusi aspirasi mahasiswa Fakultas Ekonomi dan Bisnis.
-            </p>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-            Deskripsi singkat DPM FEB TELU:<br>
-Dewan Perwakilan Mahasiswa (DPM) Fakultas Ekonomi dan Bisnis Universitas Telkom adalah organisasi legislatif mahasiswa yang menjalankan 4 fungsi yaitu Legislasi, Aspirasi, Pengganggaran dan Pengawasan
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
-
-
-    <!-- ======= form-aspirasi Section ======= -->
-    <section id="form-aspirasi" class="form-aspirasi">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>ASPIRASI</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-          <div class="col-lg mt-5 mt-lg-0">
-            <form action="{{route('aspirasi.store')}}" method="post" role="form" class="col-lg mt-5 mt-lg-0">    
-            @csrf
-          
-              <div class="form-group">
-                <label for="nim">NIM</label>
-                  <input type="number" class="form-control" id="nim" placeholder="NIM" name="nim" value="{{old('nim')}}" required>
-              </div>
-              <div class="form-group">
-                <label for="kategori">Kategori</label>
-                <select id="kategori" name="kategori" value="{{old('kategori')}}" placeholder="kategori" class="form-select"  required>
-                  <option selected="" disabled="">- Pilih Kategori -</option>
-                  <option value="akademi" @if (old('kategori') == 'akademi') selected="selected" @endif>akademi
-                  </option>
-                  <option value="minat bakat" @if (old('kategori') == 'minat bakat') selected="selected" @endif>minat bakat
-                  </option>
-                  <option value="fasilitas" @if (old('kategori') == 'fasilitas') selected="selected" @endif>fasilitas
-                  </option>
-                  <option value="ormawa" @if (old('kategori') == 'ormawa') selected="selected" @endif>ormawa
-                  </option>
-                  <option value="dll" @if (old('kategori') == 'dll') selected="selected" @endif>dll
-                  </option>
-
-                </select>
-              </div>
-              <div class="form-group">
-                <select id="status" name="status" value="{{old('status')}}" placeholder="status" class="form-select" hidden required>
-                  <option value="pending" @if (old('status') == 'pending') selected="selected" @endif>pending
-                  </option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="aspirasi">Aspirasi</label>
-                  <textarea class="form-control" id="aspirasi" placeholder="aspirasi" name="aspirasi" value="{{old('aspirasi')}}" rows="10" required></textarea>
-              </div>
-
-              <div class="form-group">
-                <label for="gambar">gambar</label>
-                  <input type="file" name="images" class="form-control border-input">
-              </div>
-              <div class="text-center">
-                <button type="submit"  class="btn btn-primary" style="color=#37517e" >SAMPAIKAN ASPIRASIMU!!!</button>
-                <a href="{{route('index')}}"></a>
-              </div>
-            </form>
-
-            
-          </div>
-      </div>
-    </section>
-    <!-- End form-aspirasi Section -->
-    <section id="list-aspirasi" class="list-aspirasi">
-      <div class="container" >
-      <div class="row">
-        <div class="col-12">
-                <div class="card-body">
-                    <table class="table table-bordered table-stripped" id="example2">    
-                        <thead>
-                        <tr>
-                            <th>No.</th>
-                            <th>NIM</th>
-                            <th>Kategori</th>
-                            <th>Aspirasi</th>
-                            <th>Status</th>
-
-                            
-                        </tr>
-                        </thead>
-                        <tbody>
-                        @foreach($aspirasi as $key => $aspirasi)
-                            <tr>
-                                <td>{{$key+1}}</td>
-                                <td>{{$aspirasi->nim}}</td>
-                                <td>{{$aspirasi->kategori}}</td>
-                                <td>{{$aspirasi->aspirasi}}</td>
-                                <!-- jika status aprov maka tampil aspirasi -->
-                                <td>{{$aspirasi->status}}</td>
-                            </tr>
-                        @endforeach
-                        </tbody>
-                    </table>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            Lava
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about" class="menu-item">About</a></li>
+                            <li class="scroll-to-section"><a href="#testimonials" class="menu-item">Testimonials</a>
+                            </li>
+                            <li class="submenu">
+                                <a href="javascript:;">Drop Down</a>
+                                <ul>
+                                    <li><a href="" class="menu-item">About Us</a></li>
+                                    <li><a href="" class="menu-item">Features</a></li>
+                                    <li><a href="" class="menu-item">FAQ's</a></li>
+                                    <li><a href="" class="menu-item">Blog</a></li>
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact Us</a></li>
+                             <li><a class="getstarted scrollto" href="{{route('login')}}">Login</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
                 </div>
+            </div>
         </div>
-    </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
 
-      </div>
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        <h1>Simple App that we <em>CREATE</em></h1>
+                        <p>Lava <a href="#">HTML landing page</a> template is provided by <a href="#">TemplateMo</a>.
+                           You can modify and use it for your commercial websites for free of charge. This template is last updated on 29 Oct 2019.</p> 
+                        <a href="#about" class="main-button-slider">KNOW US BETTER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Header Text End ***** -->
+    </div>
+    <!-- ***** Welcome Area End ***** -->
+
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>01</h2>
+                            <img src="assets/images/features-icon-1.png" alt="">
+                            <h4>Trend Analysis</h4>
+                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
+                            <a href="#testimonials" class="main-button">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>02</h2>
+                            <img src="assets/images/features-icon-2.png" alt="">
+                            <h4>Site Optimization</h4>
+                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
+                            <a href="#testimonials" class="main-button">
+                                Discover More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>03</h2>
+                            <img src="assets/images/features-icon-3.png" alt="">
+                            <h4>Email Design</h4>
+                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
+                            <a href="#testimonials" class="main-button">
+                                More Detail
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- ***** Features Big Item End ***** -->
 
-    <!-- list-aspirasi Section  -->
+    <div class="left-image-decor"></div>
 
-
-    <!-- end list-aspirasi Section  -->
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg col-md footer-links">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          </div>
-
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section" id="promotion">
+        <div class="container">
+            <div class="row">
+                <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
+                    <ul>
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                            <img src="assets/images/about-icon-01.png" alt="">
+                            <div class="text">
+                                <h4>Vestibulum pulvinar rhoncus</h4>
+                                <p>Please do not redistribute this template ZIP file for a download purpose. You may <a
+                                rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact</a> us for
+                            additional licensing of our template or to get a PSD file.</p>
+                            </div>
+                        </li>
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
+                            <img src="assets/images/about-icon-02.png" alt="">
+                            <div class="text">
+                                <h4>Sed blandit quam in velit</h4>
+                                <p>You can <a rel="nofollow"
+                                        href="https://templatemo.com/tm-540-lava-landing-page">download Lava
+                                        Template</a> from our website. Duis viverra, ipsum et scelerisque placerat, orci
+                                    magna consequat ligula.</p>
+                            </div>
+                        </li>
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
+                            <img src="assets/images/about-icon-03.png" alt="">
+                            <div class="text">
+                                <h4>Aenean faucibus venenatis</h4>
+                                <p>Phasellus in imperdiet felis, eget vestibulum nulla. Aliquam nec dui nec augue
+                                    maximus porta. Curabitur tristique lacus.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
 
-    <div class="container footer-bottom clearfix">
-    <div class="copyright">
-        &copy; Copyright <strong><span>DPM TELKOM UNIVERSITY</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        develop by <a href="https://www.instagram.com/mrfnrlhkm/">mrfnrlhkm</a>
-      </div>
-    </div>
+    <div class="right-image-decor"></div>
 
-    
-  </footer><!-- End Footer -->
+    <!-- ***** Testimonials Starts ***** -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="center-heading">
+                        <h2>What They Think <em>About Us</em></h2>
+                        <p>Suspendisse vitae laoreet mauris. Fusce a nisi dapibus, euismod purus non, convallis odio.
+                            Donec vitae magna ornare, pellentesque ex vitae, aliquet urna.</p>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-12 col-sm-12 mobile-bottom-fix-big"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/images/testimonial-author-1.png" alt="Author One"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>Jonathan Smart</h4>
+                                <p>“Nullam hendrerit, elit a semper pharetra, ipsum nibh tristique tortor, in tempus
+                                    urna elit in mauris.”</p>
+                                <span>Besta CTO</span>
+                            </div>
+                        </div>
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/images/testimonial-author-1.png" alt="Second Author"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>Martino Tino</h4>
+                                <p>“Morbi non mi luctus felis molestie scelerisque. In ac libero viverra, placerat est
+                                    interdum, rhoncus leo.”</p>
+                                <span>Web Analyst</span>
+                            </div>
+                        </div>
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/images/testimonial-author-1.png" alt="Author Third"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>George Tasa</h4>
+                                <p>“Fusce rutrum in dolor sit amet lobortis. Ut at vehicula justo. Donec quam dolor,
+                                    congue a fringilla sed, maximus et urna.”</p>
+                                <span>System Admin</span>
+                            </div>
+                        </div>
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/images/testimonial-author-1.png" alt="Fourth Author"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>Sir James</h4>
+                                <p>"Fusce rutrum in dolor sit amet lobortis. Ut at vehicula justo. Donec quam dolor,
+                                    congue a fringilla sed, maximus et urna."</p>
+                                <span>New Villager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Testimonials Ends ***** -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- ***** Footer Start ***** -->
+    <footer id="contact-us">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <!-- ***** Contact Form Start ***** -->
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="contact-form">
+                            <form id="contact" action="" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <input name="name" type="text" id="name" placeholder="Full Name" required=""
+                                                style="background-color: rgba(250,250,250,0.3);">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <input name="email" type="text" id="email" placeholder="E-Mail Address"
+                                                required="" style="background-color: rgba(250,250,250,0.3);">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <textarea name="message" rows="6" id="message" placeholder="Your Message"
+                                                required="" style="background-color: rgba(250,250,250,0.3);"></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="main-button">Send Message
+                                                Now</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- ***** Contact Form End ***** -->
+                    <div class="right-content col-lg-6 col-md-12 col-sm-12">
+                        <h2>More About <em>Lava</em></h2>
+                        <p>Phasellus dapibus urna vel lacus accumsan, iaculis eleifend leo auctor. Duis at finibus odio.
+                            Vivamus ut pharetra arcu, in porta metus. Suspendisse blandit pulvinar ligula ut elementum.
+                            <br><br>If you need this contact form to send email to your inbox, you may follow our <a
+                                rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact</a> page
+                            for more detail.</p>
+                        <ul class="social">
+                            <li><a href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sub-footer">
+                        <p>Copyright &copy; 2020 Lava Landing Page
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+                        | Designed by <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
 
 </body>
-
 </html>

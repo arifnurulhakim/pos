@@ -20,7 +20,11 @@
                             @error('nama_kategori') <span class="text-danger">{{$message}}</span> @enderror
                         </div>   
                     </div>
-
+                    <div class="form-group">
+                        <label for="exampleInputImage">Image</label>
+                        <input type="file" class="form-control @error('image') is-invalid @enderror" id="exampleInputImage" name="image" value="{{old('image')}}">
+                        @error('image') <span class="text-danger">{{$message}}</span> @enderror
+                    </div>
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary">Simpan</button>
                         <a href="{{route('kategori.index')}}" class="btn btn-default">
@@ -30,4 +34,5 @@
                 </div>
             </div>
         </div>
+    </form>
 @stop

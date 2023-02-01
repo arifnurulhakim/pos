@@ -21,6 +21,8 @@
                         <tr>
                             <th>No.</th>
                             <th>Nama Kategori</th>
+                            <th>Gambar</th>
+
                             <th>Opsi</th>
                         </tr>
                         </thead>
@@ -29,6 +31,7 @@
                             <tr>
                                 <td>{{$key+1}}</td>
                                 <td>{{$kategori->nama_kategori}}</td>
+                                <td><img src="{{ 'data:image/jpeg;base64,' . $kategori->image }}" alt="{{ $kategori->nama_kategori }}"></td>
                                 
                                 <td>
                                     <a href="{{route('kategori.edit', $kategori)}}" class="btn btn-primary btn-xs">

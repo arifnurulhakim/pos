@@ -12,6 +12,7 @@ class Kategori extends Model
     protected $guarded = [];
     protected $fillable = [
         'nama_kategori',
+        'image'
     ];
 
 }

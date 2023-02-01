@@ -19,7 +19,15 @@
                             <input type="text" class="form-control @error('nama Kategori') is-invalid @enderror" id="exampleInputName" placeholder="Nama Kategori" name="nama_kategori" value="{{old('nama_kategori')}}">
                             @error('nama_kategori') <span class="text-danger">{{$message}}</span> @enderror
                         </div>
+
+                        <div class="form-group">
+                        <label for="exampleInputImage">Image</label>
+                        <input type="file"  name="image" value="{{old('image')}}">
+
+                        </div>
                     </div>
+
+                    
 
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary">Simpan</button>
@@ -30,4 +38,5 @@
                 </div>
             </div>
         </div>
+    </form>
 @stop

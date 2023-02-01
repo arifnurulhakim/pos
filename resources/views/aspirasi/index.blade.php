@@ -12,6 +12,9 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
+                    <a href="{{route('aspirasi.create')}}" class="btn btn-primary mb-2">
+                        Tambah
+                    </a>
                     <table class="table table-hover table-bordered table-stripped" id="example2">
                         <thead>
                         <tr>
